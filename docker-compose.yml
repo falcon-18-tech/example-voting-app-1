@@ -78,7 +78,8 @@ services:
       CATALINA_TMPDIR: /usr/local/tomcat/temp
       JRE_HOME: /usr
       CLASSPATH: /usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar
-    ports: 8085:8080
+    ports: 
+      - "8085:80"
    
 
 volumes:
